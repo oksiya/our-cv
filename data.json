@@ -1,38 +1,38 @@
 {
     "user" : {
-        "fullName" : "",
-        "photo" : "",
-        "phone" : "",
-        "email" : ""
+        "fullName" : "Siyabonga Masuku",
+        "photo" : "siya.jpeg",
+        "phone" : "(+27) 78 299 1217",
+        "email" : "siya.coma@gmail.com"
     },
     "education" : {
-        "institutionName" : "",
-        "photo" : "",
-        "description" : ""
+        "institutionName" : "University of Johannesburg",
+        "photo" : "UJimage.jpg",
+        "description" : "The University of Johannesburg (UJ) is a leading public university in South Africa, renowned for its commitment to academic excellence, innovation, and community engagement. Established in 2005 through the merger of Rand Afrikaans University, Technikon Witwatersrand, and parts of Vista University, UJ has quickly become a prestigious institution. With a diverse student body and a wide range of undergraduate and postgraduate programs, UJ fosters a vibrant and inclusive academic environment. The university is dedicated to producing globally competitive graduates through its emphasis on research, technological advancement, and sustainable development."
     },
     "foreignLanguage" : {
-        "language" : "",
+        "language" : "Japanese",
         "phrases" : [{
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
+            "englishPhrase" : "Hello",
+            "foreignLanguage" : "こんにちは (Konnichiwa)"
         },
         {
-            "englishPhrase" : "",
-            "foreignLanguage" : ""
+            "englishPhrase" : "Thank you",
+            "foreignLanguage" : "ありがとう (Arigatou)"
         }]
     },
     "favouriteSubjects" : [
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Computer Science",
+            "description" : "Computer Science has equipped me with expertise in programming, software development, and systems architecture. I have practical experience in coding, debugging, and creating innovative software solutions."
         },
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Mathematics",
+            "description" : "Mathematics has sharpened my analytical and problem-solving skills. I excel in data analysis, quantitative reasoning, and abstract thinking, allowing me to tackle complex problems with precision."
         },
         {
-            "name" : "",
-            "description" : ""
+            "name" : "Physical Science",
+            "description" : "Physical Science has deepened my understanding of physics and chemistry. I am skilled in conducting experiments, analyzing data, and applying scientific methods to solve technical challenges."
         }
     ]
 }
