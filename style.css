@@ -1,0 +1,14 @@
+@media(min-width: 960px){
+    .user{
+        display: flex;
+    }
+
+}
+
+.profile{
+    width: 250px;
+    height: 330px;
+    border-radius: 20%;
+    border: solid white;
+    padding: 0.5em;
+}

@@ -3,12 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <section class="intro">
-        <h1>Siyabonga Masuku</h1>
-        <img src="siya.jpeg" class="profile">
-    </section>
+    <div class="user">
+        <h1>{{user.fullName}}</h1>
+        <img class="profile" src="{{user.photo}}" alt="Photo of {{user.fullName}}">
+        <p>Phone: {{user.phone}}</p>
+        <p>Email: <a href="mailto:{{user.email}}">{{user.email}}</a></p>
+    </div>
+
+    <div class="education">
+        <h2>Education</h2>
+        <img src="{{education.photo}}" alt="Photo of {{education.institutionName}}">
+        <p><strong>{{education.institutionName}}</strong></p>
+        <p>{{education.description}}</p>
+    </div>
+
+    <div class="language">
+        <h2>Foreign Language</h2>
+        <p><strong>Language:</strong> {{foreignLanguage.language}}</p>
+        <ul>
+            {{#each foreignLanguage.phrases}}
+            <li>{{englishPhrase}} - {{foreignLanguage}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <div class="subjects">
+        <h2>Favourite Subjects</h2>
+        <ul>
+            {{#each favouriteSubjects}}
+            <li>
+                <strong>{{name}}</strong>
+                <p>{{description}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
 </body>
 </html>
