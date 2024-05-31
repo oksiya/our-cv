@@ -15,9 +15,12 @@
     </div>
     <div class="contact">
         <h3>Contact Information</h3>
-        <p><img src="{{contact.phoneIcon}}" alt="Phone Icon"> {{contact.phone}}</p>
-        <p><img src="{{contact.emailIcon}}" alt="Email Icon"> {{contact.email}}</p>
-        <p><img src="{{contact.addressIcon}}" alt="Address Icon"> {{contact.address}}</p>
+        <div class="icon">
+            <p><img src="{{contact.phoneIcon}}" alt="Phone Icon"> {{contact.phone}}</p>
+            <p><img src="{{contact.emailIcon}}" alt="Email Icon"> {{contact.email}}</p>
+            <p><img src="{{contact.addressIcon}}" alt="Address Icon"> {{contact.address}}</p>           
+        </div>
+
         <div class="socials">
             {{#each contact.socials}}
             <img src="{{this.social}}" alt="Social Icon">
@@ -44,14 +47,17 @@
     </div>
     <div class="education">
         <h3>Education</h3>
-        {{#each education}}
         <div class="education-item">
-            <h4>{{qualName}} in {{majors}}</h4>
-            <p>{{instiName}}, {{duration}}</p>
-            <p>{{description}}</p>
-            <p><strong>Modules:</strong> {{modules}}</p>
+            {{#each education}}
+            <div>
+                <h4>{{qualName}} in {{majors}}</h4>
+                <p>{{instiName}}, {{duration}}</p>
+                <p>{{description}}</p>
+                <p><strong>Modules:</strong> {{modules}}</p>                
+            </div>
+            {{/each}}
         </div>
-        {{/each}}
+        
     </div>
     <div class="projects">
         <h3>Projects</h3>

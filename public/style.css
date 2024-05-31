@@ -82,9 +82,14 @@ p {
     margin: 5px;
 }
 
+.icon img {
+    width: 30px;
+    margin: 5px;
+}
+
 .skills ul {
     list-style: none;
-    padding: 0;
+    padding: 1em;
 }
 
 .skills li {
@@ -151,4 +156,34 @@ p {
     .user p {
         font-size: 0.8em;
     }
+}
+
+@media (min-width: 960px){
+    .education-item {
+        display: flex;
+        background: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        gap: 10px;
+        margin: 5px 0;
+        align-content: space-evenly;
+    }
+
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        gap: 5px;
+
+    }
+
+    li {
+
+        background: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: left;
+        
+    }
+
 }
