@@ -31,8 +31,8 @@
     </div>
     <div class="experience">
         <h3>Experience</h3>
-        <h4>{{expirience.companyName}} - {{expirience.jobTitle}}</h4>
-        <p>{{expirience.description}}</p>
+        <h4>{{expirience.companyName}} - <r style="font-style: italic;">{{expirience.jobTitle}} </r></h4>
+        <p style="font-style: italic; font-size: smaller;">{{expirience.description}}</p>
         <ul>
             {{#each expirience.duties}}
             <li>{{this.duty}}</li>
@@ -46,7 +46,7 @@
             <li>
                 <div>
                     <h4>{{qualName}} in {{majors}}</h4>
-                    <p style="font-style: italic; font-size: small;"> <strong>{{instiName}},</strong> {{duration}}</p>
+                    <p style="font-style: italic; font-size: smaller;"> <strong>{{instiName}},</strong> {{duration}}</p>
                     <p>{{description}}</p>
                     <p><strong>Modules:</strong> {{modules}}</p>                
                 </div>                
@@ -64,7 +64,9 @@
                     <h4>{{projName}}</h4>
                     <p>{{description}}</p>
                     {{#if link}}
-                    <p><a href="{{link}}" target="_blank">Project Link</a></p>
+                    <p><a href="{{link}}" target="_blank">
+                        <img src="{{this.icon}}" alt="">
+                    </a></p>
                     {{/if}}
                 </div>                
             </li>
