@@ -16,11 +16,6 @@ p {
     margin: 0 0 10px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
 
 /* User Section */
 .user {
@@ -48,10 +43,12 @@ p {
 
 .user p {
     font-size: 1em;
+    font-style: italic;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 /* Contact Section */
 .contact, .skills, .experience, .education, .projects {
@@ -60,6 +57,12 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.socials {
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px;
 }
 
 .contact h3, .skills h3, .experience h3, .education h3, .projects h3 {
@@ -87,26 +90,15 @@ p {
     margin: 5px;
 }
 
-.skills ul {
+ul {
     list-style: none;
-    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.skills li {
+li {
     background: #eee;
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.experience ul {
-    list-style: none;
-    padding: 0;
-}
-
-.experience li {
-    background: #eee;
-    margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
 }
@@ -117,9 +109,6 @@ p {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
 
     .user img {
         width: 120px;
@@ -158,32 +147,13 @@ p {
     }
 }
 
-@media (min-width: 960px){
-    .education-item {
-        display: flex;
-        background: #eee;
-        padding: 10px;
-        border-radius: 5px;
-        gap: 10px;
-        margin: 5px 0;
-        align-content: space-evenly;
+@media (min-width: 1200px){
+    .education-item li{
+        flex: 1;
     }
 
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-evenly;
-        gap: 5px;
-
+    .project-item li {
+        flex: 1;
     }
-
-    li {
-
-        background: #eee;
-        padding: 10px;
-        border-radius: 5px;
-        text-align: left;
-        
-    }
-
 }
+

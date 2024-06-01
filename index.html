@@ -20,12 +20,6 @@
             <p><img src="{{contact.emailIcon}}" alt="Email Icon"> {{contact.email}}</p>
             <p><img src="{{contact.addressIcon}}" alt="Address Icon"> {{contact.address}}</p>           
         </div>
-
-        <div class="socials">
-            {{#each contact.socials}}
-            <img src="{{this.social}}" alt="Social Icon">
-            {{/each}}
-        </div>
     </div>
     <div class="skills">
         <h3>Skills</h3>
@@ -47,28 +41,43 @@
     </div>
     <div class="education">
         <h3>Education</h3>
-        <div class="education-item">
+        <ul class="education-item">
             {{#each education}}
-            <div>
-                <h4>{{qualName}} in {{majors}}</h4>
-                <p>{{instiName}}, {{duration}}</p>
-                <p>{{description}}</p>
-                <p><strong>Modules:</strong> {{modules}}</p>                
-            </div>
+            <li>
+                <div>
+                    <h4>{{qualName}} in {{majors}}</h4>
+                    <p style="font-style: italic; font-size: small;"> <strong>{{instiName}},</strong> {{duration}}</p>
+                    <p>{{description}}</p>
+                    <p><strong>Modules:</strong> {{modules}}</p>                
+                </div>                
+            </li>
             {{/each}}
-        </div>
+        </ul>
         
     </div>
     <div class="projects">
         <h3>Projects</h3>
-        {{#each projects}}
-        <div class="project-item">
-            <h4>{{projName}}</h4>
-            <p>{{description}}</p>
-            {{#if link}}
-            <p><a href="{{link}}" target="_blank">Project Link</a></p>
-            {{/if}}
-        </div>
+        <ul class="project-item">
+            {{#each projects}}
+            <li>
+                <div>
+                    <h4>{{projName}}</h4>
+                    <p>{{description}}</p>
+                    {{#if link}}
+                    <p><a href="{{link}}" target="_blank">Project Link</a></p>
+                    {{/if}}
+                </div>                
+            </li>
+            {{/each}}           
+        </ul>
+    </div>
+    
+    <div class="socials">
+        {{#each contact.socials}}
+        <a href="{{this.link}}">
+            <img src="{{this.social}}" alt="Social Icon">
+        </a>
+        
         {{/each}}
     </div>
 </body>
