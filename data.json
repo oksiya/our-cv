@@ -1,0 +1,85 @@
+{
+    "user" : {
+        "fullName" : "Siyabonga Masuku",
+        "photo" : "siya.jpeg",
+        "title" : "Mathematical Science & Computer Science Graduate",
+        "about" : "Driven by a passion for problem-solving and innovation, I am a dedicated individual with a dual degree in BSc Mathematical Science (specializing in Applied Mathematics and Computer Science) and BSc Honours in Computer Science (with cybersecurity). With 18 months experience as an academic tutor/assistant for IT students, I have honed my ability to effectively communicate complex concepts and mentor others. Proficient in programming languages such as Python, Java, and C++, coupled with practical experience in data analysis and machine learning techniques, my goal is to join a progressive company that values growth and nurtures creativity, leveraging the opportunities presented by the 4th Industrial Revolution (4IR) to drive positive change. I'm enthusiastic about aligning my academic background and hands-on experience with your organization's goals in this dynamic era. Thank you for considering my application."
+    },
+
+    "contact" : {
+        "phoneIcon": "call_icon.png",
+        "phone" : "(+27) 78 299 1217",
+        "emailIcon": "email_icon.png",
+        "email" : "siya.coma@gmail.com",
+        "addressIcon": "address_icon.png",
+        "address" : "3256 Sinqobile Daggakraal, Mpumalanga, 2491.",
+        "socials": [{"social" : "linkedIn_icon.png", "link": "https://www.linkedin.com/in/siyabonga-masuku-447318202/"},
+                    {"social" : "github_icon.png", "link": "https://github.com/oksiya"},
+                    {"social" : "twitter_icon.png", "link": "https://x.com/ok_siya"}]
+        
+    },
+
+    "skills" : [{"skill" : "Programming: Python, Java, C++"},
+                {"skill": "Algorithms & Data Structures"},
+                {"skill": "Statistical Analysis & Data Visualization (Python)"},
+                {"skill" : "Database Management: SQL(SQLite, MySQL)"},
+                {"skill": "Artificial intelligence (AI): Machine Learning & Deep Learning"},
+                {"skill": "Effective Communication & Teaching"},
+                {"skill" : "Team Collaboration & Project Coordination"},
+                {"skill": "Quick Learning & Adaptability"},
+                {"skill": "Time Management & Organization"}],
+
+    "expirience" : {"companyName" : "University of Johannesburg",
+                    "jobTitle" : "Academic Tutor/Assistance",
+                    "description" : "I was assisting/tutoring IT & Computer Science students and working closer with lectures:",
+                    "duties" : [{"duty": "Invigilating during semester tests."},
+                                {"duty": "Marking tests and weekly assignments."},
+                                {"duty": "Individual and group tutoring."}]},
+
+    "education" : [{
+        "qualName": "BSc Honours Computer Science",
+        "majors": "Cyber Security",
+        "instiName": "University of Johannesburg",
+        "duration": "2022 - 2023",
+        "description": "In my Honours year, I specialized in Cybersecurity, gaining in-depth knowledge of information security and data protection. My coursework and research project on phishing email detection using Natural Language Processing (NLP) equipped me with advanced skills in cybersecurity, data analysis, and practical applications of computer science principles.",
+        "modules": "Information Security, Network Information Security, Information Security in WWW, Information Risk Analysis, WWW Big Data Analytics, Data Communication, Ethical and Legal Aspects of IT, Phishing Email Detection with NLP (Project and Research)"
+    },
+    {
+        "qualName": "BSc Mathematical Science",
+        "majors": "Applied Mathematics & Computer Science",
+        "instiName": "University of Johannesburg",
+        "duration": "2015 - 2021",
+        "description": "My undergraduate studies provided me with a strong foundation in both mathematical theories and computational techniques. Through diverse coursework, I developed robust analytical and problem-solving skills, enabling me to tackle complex challenges in various scientific and technological fields.",
+        "modules": "Statistics, Physics, Calculus, Linear Algebra, Applied Mathematics, Computer Science."
+    },
+    {
+        "qualName": "Grade 12 (NSC)",
+        "majors": "Science Stream",
+        "instiName": "Nalithuba Secondary School",
+        "duration": "2010 - 2014",
+        "description": "Completed Grade 12 in the science stream, focusing on a rigorous curriculum that developed my analytical and critical thinking skills, laying a strong foundation for my further studies in mathematical science and computer science."
+    }],
+
+    "projects" : [{
+        "projName": "MosquitoAlert Challenge 2023",
+        "description": "Participated in the MosquitoAlert Challenge 2023, aimed at enhancing mosquito detection using deep learning techniques and computer vision. Mosquitoes pose a significant health risk, and efficient detection can aid in vector control efforts. The project involved developing a mosquito detection model trained on a diverse dataset of mosquito images. This model provides accurate and real-time identification of mosquito species, aiding in vector-borne disease prevention. Leveraged Python, deep learning frameworks, and data science libraries to preprocess data, build, and evaluate the model. Additionally, I presented this project as part of my Big Data Analytics research, showcasing the integration of advanced analytics in public health solutions. This experience enhanced my expertise in machine learning, computer vision, and big data analytics.",
+        "link": "https://youtu.be/xStelc7BSBo",
+        "icon": "youtube.png"
+    },
+    {
+        "projName": "Android Mobile POS App for Street Vendors",
+        "description": "Developed an Android mobile Point-of-Sale (POS) application tailored for street vendors to facilitate easy and efficient transaction management. The app includes features such as inventory tracking, sales recording, and real-time analytics to help vendors streamline their business operations. Leveraged Java and Android Studio to build the app, focusing on a user-friendly interface and robust functionality. This project enhanced my skills in mobile app development, UI/UX design, and practical problem-solving for real-world applications."
+    },
+    {
+        "projName": "SACAIR2023 - Satellite Image Classification Competition",
+        "description": "Participated in the SACAIR2023 Satellite Image Classification Competition, focusing on developing and implementing machine learning models to classify satellite imagery accurately. Utilized deep learning techniques and frameworks such as TensorFlow and PyTorch to preprocess data, build, train, and evaluate models. This project involved extensive data analysis, feature extraction, and model optimization to achieve high classification accuracy. The experience enhanced my skills in computer vision, image processing, and collaborative problem-solving.",
+        "link": "https://youtu.be/_JtK7oUszHw",
+        "icon": "youtube.png"
+    },
+    {
+        "projName": "Final Year Project: PhishHunter - Advanced Phishing Email Detection",
+        "description": "For my final year project, I developed PhishHunter, an advanced phishing email detection system. By exploring text representation techniques like TF-IDF, Word2Vec, and Doc2Vec, combined with classifiers such as Decision Tree, Logistic Regression, and SVM, I enhanced phishing email detection. The research revealed that Word2Vec, when paired with SVM, provided superior adaptability and semantic understanding, despite a slightly lower accuracy compared to N-gram in TF-IDF. This project sharpened my skills in NLP, machine learning, and cybersecurity.",
+        "link": "https://youtu.be/7jSiL7KdoFU",
+        "icon": "youtube.png"
+    }]
+}
