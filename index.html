@@ -1,4 +1,4 @@
-u<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +8,17 @@ u<!DOCTYPE html>
 </head>
 <body>
     <div class="user">
-        <img src="{{user.photo}}" alt="Photo of {{user.fullName}}">
-        <h1>{{user.fullName}}</h1>
-        <h2>{{user.title}}</h2>
-        <p>{{user.about}}</p>
+        <div>
+            <img src="{{user.photo}}" alt="Photo of {{user.fullName}}">
+            <h1>{{user.fullName}}</h1>
+            <h2>{{user.title}}</h2>           
+        </div>
+
+        <div>
+            <p>{{user.about}}</p>           
+        </div>
+
+
     </div>
     <div class="contact">
         <h3>Contact Information</h3>
