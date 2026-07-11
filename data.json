@@ -21,10 +21,10 @@
   "user": {
     "fullName": "Siyabonga Masuku",
     "photo": "siya.jpeg",
-    "title": "Data Engineer | Building Scalable Data & AI Solutions",
+    "title": "Data Engineer | Building Data Platforms, AI Products & Cloud Systems",
     "eyebrow": "Data Engineering · AI · Cloud",
-    "about": "Data Engineer with experience designing, building, and deploying scalable data and AI solutions in cloud environments. I build reliable pipelines, REST APIs, and machine learning deployments that turn complex data into valuable business insight.",
-    "aboutLead": "I combine a software-engineering foundation with practical cloud and AI expertise to deliver thoughtful, production-ready systems.",
+    "about": "I build reliable data platforms, cloud-native services, and AI-powered solutions that turn complex information into practical products and business insight.",
+    "aboutLead": "I combine strong software engineering fundamentals with hands-on experience in data engineering, cloud systems, and machine learning to deliver thoughtful, production-ready solutions.",
     "highlightsLabel": "Professional highlights",
     "highlights": [
       { "icon": "📍", "text": "South Africa" },
@@ -47,7 +47,7 @@
     "education": "Education",
     "certifications": "Certifications",
     "contact": "Let's build something meaningful",
-    "contactText": "I am open to conversations about data platforms, AI-powered products, and cloud engineering opportunities.",
+    "contactText": "I am open to conversations about data platforms, AI products, and cloud engineering opportunities where thoughtful systems can create real impact.",
     "contactCta": "Start a conversation",
     "skipToContent": "Skip to content",
     "contactNumber": "06",
@@ -131,16 +131,14 @@
       "companyName": "LexisNexis",
       "jobTitle": "Data Engineer",
       "duration": "2025 – Present",
-      "description": "Designing and building scalable cloud-native data and AI solutions.",
+      "description": "Building scalable, cloud-native data and AI systems that support reliable products, intelligent automation, and data-driven decision-making.",
       "duties": [
-        "Designed scalable data engineering solutions supporting AI-driven products.",
-        "Built and maintained cloud-native backend services.",
-        "Developed RESTful APIs for internal platforms.",
-        "Automated software delivery through CI/CD pipelines.",
-        "Deployed machine learning models into production on AWS.",
-        "Collaborated with software engineers, data scientists and product teams.",
-        "Improved application performance and reliability.",
-        "Contributed to technical design discussions and code reviews."
+        "Architected and implemented data pipelines and backend services for scalable, production-ready workflows.",
+        "Built and maintained cloud-based applications and integrations in AWS environments.",
+        "Developed REST APIs and data services that supported internal platforms and AI-driven features.",
+        "Automated deployment and delivery processes through CI/CD pipelines.",
+        "Collaborated with engineers, data scientists, and product teams to ship reliable solutions.",
+        "Improved system performance, observability, and maintainability across critical services."
       ],
       "achievements": []
     },
@@ -188,7 +186,7 @@
     {
       "projName": "MosquitoAlert Challenge 2023",
       "projectType": "Computer Vision",
-      "description": "Participated in the MosquitoAlert Challenge 2023, developing and evaluating deep learning models for mosquito species classification using transfer learning and computer vision techniques. The solution supported accurate image-based identification for vector surveillance and public health research.",
+      "description": "Developed and evaluated deep learning models for mosquito species classification using transfer learning and computer vision, contributing to image-based identification for vector surveillance and public health research.",
       "technologies": [
         "Python",
         "TensorFlow",
@@ -203,7 +201,7 @@
     {
       "projName": "Android Mobile POS App for Street Vendors",
       "projectType": "Mobile Application",
-      "description": "Developed an Android point-of-sale application for informal traders featuring inventory management, sales recording, customer management, and business analytics. Designed to simplify day-to-day business operations through an intuitive mobile experience.",
+      "description": "Designed and built an Android point-of-sale application for informal traders, simplifying inventory tracking, sales recording, and business analytics through an intuitive mobile experience.",
       "technologies": [
         "Java",
         "Android Studio",
@@ -215,7 +213,7 @@
     {
       "projName": "SACAIR2023 Satellite Image Classification",
       "projectType": "Machine Learning",
-      "description": "Participated in the SACAIR2023 competition, developing and evaluating deep learning models for satellite image classification through feature engineering, model optimisation, and performance evaluation.",
+      "description": "Built and evaluated deep learning models for satellite image classification through feature engineering, model optimisation, and performance evaluation in a competitive research setting.",
       "technologies": [
         "Python",
         "TensorFlow",
