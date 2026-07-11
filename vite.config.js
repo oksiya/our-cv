@@ -2,8 +2,8 @@ import handlebars from 'vite-plugin-handlebars';
 import data from './data.json';
 
 export default {
-  base : '/responsive_cv/',   // <-- add this
+  base: './',
   plugins: [handlebars({
-      context : data   // add this
+    context: data,
   })],
 };
