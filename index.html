@@ -1,97 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="{{seo.language}}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Believe Us Now?</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{seo.description}}">
+  <meta name="theme-color" content="#0F172A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{seo.title}}">
+  <meta property="og:description" content="{{seo.description}}">
+  <meta property="og:url" content="{{seo.siteUrl}}">
+  <meta property="og:image" content="{{seo.image}}">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>{{seo.title}}</title>
 </head>
-<div class="container">
-    <div class="user">
-        <div>
-            <img src="{{user.photo}}" alt="Photo of {{user.fullName}}">
-            <h1>{{user.fullName}}</h1>
-            <h2>{{user.title}}</h2>           
-        </div>
-
-        <div>
-            <p>{{user.about}}</p>           
-        </div>
-
-
-    </div>
-    <div class="contact">
-        <h3>Contact Information</h3>
-        <div class="icon">
-            <p><img src="{{contact.phoneIcon}}" alt="Phone Icon"> {{contact.phone}}</p>
-            <p><img src="{{contact.emailIcon}}" alt="Email Icon"> {{contact.email}}</p>
-            <p><img src="{{contact.addressIcon}}" alt="Address Icon"> {{contact.address}}</p>           
-        </div>
-    </div>
-    <div class="skills">
-        <h3>Skills</h3>
-        <ul>
-            {{#each skills}}
-            <li>{{this.skill}}</li>
-            {{/each}}
-        </ul>
-    </div>
-    <div class="experience">
-        <h3>Experience</h3>
-        <h4>{{expirience.companyName}} - <r style="font-style: italic;">{{expirience.jobTitle}} </r></h4>
-        <p style="font-style: italic; font-size: smaller;">{{expirience.description}}</p>
-        <ul>
-            {{#each expirience.duties}}
-            <li>{{this.duty}}</li>
-            {{/each}}
-        </ul>
-    </div>
-    <div class="education">
-        <h3>Education</h3>
-        <ul class="education-item">
-            {{#each education}}
-            <li>
-                <div>
-                    <h4>{{qualName}} in {{majors}}</h4>
-                    <p style="font-style: italic; font-size: smaller;"> <strong>{{instiName}},</strong> {{duration}}</p>
-                    <p>{{description}}</p>
-                    <p><strong>Modules:</strong> {{modules}}</p>                
-                </div>                
-            </li>
-            {{/each}}
-        </ul>
-        
-    </div>
-    <div class="projects">
-        <h3>Projects</h3>
-        <ul class="project-item">
-            {{#each projects}}
-            <li>
-                <div>
-                    <h4>{{projName}}</h4>
-                    <p>{{description}}</p>
-                    {{#if link}}
-                    <p><a href="{{link}}" target="_blank">
-                        <img src="{{this.icon}}" alt="">
-                    </a></p>
-                    {{/if}}
-                </div>                
-            </li>
-            {{/each}}           
-        </ul>
-    </div>
-    
-    <div class="socials">
-        {{#each contact.socials}}
-        <a href="{{this.link}}">
-            <img src="{{this.social}}" alt="Social Icon">
-        </a>
-        
-        {{/each}}
-    </div>    
-</div>
-
 <body>
+  <a class="skip-link" href="#main-content">{{sectionLabels.skipToContent}}</a>
 
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="{{brand.name}} home"><span>{{brand.mark}}</span>{{brand.name}}</a>
+      <div class="nav-links">
+        {{#each navigation}}
+        <a href="{{href}}">{{label}}</a>
+        {{/each}}
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">{{user.eyebrow}}</p>
+          <h1>{{user.fullName}}</h1>
+          <p class="hero-title">{{user.title}}</p>
+          <ul class="hero-highlights" aria-label="{{user.highlightsLabel}}">
+            {{#each user.highlights}}
+            <li><span aria-hidden="true">{{icon}}</span>{{text}}</li>
+            {{/each}}
+          </ul>
+          <p class="hero-summary">{{user.about}}</p>
+          <div class="hero-actions">
+            {{#each user.actions}}
+            <a class="button {{#if primary}}button-primary{{else}}button-secondary{{/if}}" href="{{href}}" {{#if download}}download{{/if}} {{#if external}}target="_blank" rel="noreferrer"{{/if}} aria-label="{{label}}">
+              <span aria-hidden="true">{{icon}}</span>{{label}}
+            </a>
+            {{/each}}
+          </div>
+        </div>
+        <div class="hero-portrait reveal reveal-delay">
+          <div class="portrait-ring"><img src="{{user.photo}}" alt="Portrait of {{user.fullName}}" width="420" height="420" fetchpriority="high"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-layout section-reveal">
+        <p class="section-kicker">01 / {{sectionLabels.about}}</p>
+        <div class="section-intro"><h2>{{sectionLabels.about}}</h2><p class="lead">{{user.aboutLead}}</p></div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="skills">
+      <div class="container">
+        <div class="section-heading section-reveal"><p class="section-kicker">02 / {{sectionLabels.skills}}</p><h2>{{sectionLabels.skills}}</h2></div>
+        <div class="skills-grid">
+          {{#each skills}}
+          <article class="skill-card section-reveal"><h3>{{category}}</h3><ul class="tags">{{#each items}}<li>{{this}}</li>{{/each}}</ul></article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading section-reveal"><p class="section-kicker">03 / {{sectionLabels.experience}}</p><h2>{{sectionLabels.experience}}</h2></div>
+        <div class="timeline">
+          {{#each experience}}
+          <article class="timeline-item section-reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-date">{{duration}}</div>
+            <div class="timeline-card"><p class="company">{{companyName}}</p><h3>{{jobTitle}}</h3><p>{{description}}</p><ul class="responsibilities">{{#each duties}}<li>{{this}}</li>{{/each}}</ul>{{#if achievements}}<div class="achievements">{{#each achievements}}<span>{{this}}</span>{{/each}}</div>{{/if}}</div>
+          </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-surface" id="projects">
+      <div class="container">
+        <div class="section-heading section-reveal"><p class="section-kicker">04 / {{sectionLabels.projects}}</p><h2>{{sectionLabels.projects}}</h2></div>
+        <div class="projects-grid">
+          {{#each projects}}
+          <article class="project-card section-reveal">
+            <div class="project-art"><span>{{projectType}}</span></div>
+            <div class="project-content"><h3>{{projName}}</h3><p>{{description}}</p><ul class="tags">{{#each technologies}}<li>{{this}}</li>{{/each}}</ul>{{#if link}}<a class="project-link" href="{{link}}" target="_blank" rel="noreferrer">{{linkLabel}} <span aria-hidden="true">↗</span></a>{{/if}}</div>
+          </article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading section-reveal"><p class="section-kicker">05 / {{sectionLabels.education}}</p><h2>{{sectionLabels.education}}</h2></div>
+        <div class="education-grid">
+          {{#each education}}
+          <article class="education-card section-reveal"><p class="education-date">{{duration}}</p><h3>{{qualName}}</h3><p class="education-major">{{majors}}</p><p class="institution">{{instiName}}</p><p>{{description}}</p><ul class="tags">{{#each modules}}<li>{{this}}</li>{{/each}}</ul></article>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    {{#if certifications}}
+    <section class="section section-surface" id="certifications"><div class="container"><div class="section-heading"><p class="section-kicker">06 / {{sectionLabels.certifications}}</p><h2>{{sectionLabels.certifications}}</h2></div></div></section>
+    {{/if}}
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-panel section-reveal">
+        <div><p class="section-kicker">{{sectionLabels.contactNumber}} / {{sectionLabels.contact}}</p><h2>{{sectionLabels.contact}}</h2><p>{{sectionLabels.contactText}}</p><a class="button button-primary" href="mailto:{{contact.email}}">{{sectionLabels.contactCta}} <span aria-hidden="true">↗</span></a></div>
+        <address class="contact-details">
+          {{#each contact.details}}
+          <div class="contact-detail"><img src="{{icon}}" alt="" width="24" height="24" loading="lazy"><div><span>{{label}}</span>{{#if href}}<a href="{{href}}">{{value}}</a>{{else}}<p>{{value}}</p>{{/if}}</div></div>
+          {{/each}}
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content"><p>{{brand.copyright}}</p><div class="footer-socials">{{#each contact.socials}}<a href="{{link}}" target="_blank" rel="noreferrer" aria-label="{{label}}" title="{{label}}"><img src="{{social}}" alt="" width="22" height="22" loading="lazy"></a>{{/each}}</div><a class="back-top" href="#top">{{sectionLabels.backToTop}} ↑</a></div>
+  </footer>
 </body>
 </html>
